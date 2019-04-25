@@ -1,0 +1,31 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb",
+    "prettier",
+    "plugin:promise/recommended"
+  ],
+  "plugins": [
+    "promise",
+    "immutable"
+  ],
+  "rules": {
+    "comma-dangle": 0,
+    "react/prop-types": 0,
+    "react/forbid-prop-types": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/no-did-mount-set-state": 0,
+    "react/jsx-indent": 0
+  },
+  "overrides": [
+    {
+      "files": ["*.test.js","*.spec.js"],
+      "rules": {
+        "no-undef": "off"
+      }
+    }
+  ],
+  "env": {
+    "browser": true
+  }
+}
