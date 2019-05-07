@@ -8,10 +8,5 @@ export default mapStateToProps => WrappedComponent => {
     mapStateToProps,
     actions
   )(WrappedComponent);
-  return props => (
-    <ConnectedWrappedComponent
-      store={store}
-      {...props}
-    />
-  );
+  return props => <ConnectedWrappedComponent store={store} {...props} />;
 };
