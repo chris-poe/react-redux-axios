@@ -39,8 +39,12 @@
     "clean": "rm -rf node_modules/ && npm install",
     "lint": "eslint 'src/'; exit 0",
     "lint:fix": "eslint --fix 'src/'; exit 0",
-    "format": "prettier --write 'src/**/*.js'",
-    "precommit": "lint-staged"
+    "format": "prettier --write 'src/**/*.js'"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "*.js": [
