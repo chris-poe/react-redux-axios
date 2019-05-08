@@ -33,4 +33,14 @@ const commonService = {
   },
 };
 
-export { commonService };
+const authService = {
+  getAuth(params) {
+    return client.request({
+      method: 'get',
+      url: '/',
+      params,
+    });
+  },
+};
+
+export { commonService, authService };

@@ -6,6 +6,7 @@
     "plugin:promise/recommended"
   ],
   "plugins": [
+    "react-hooks",
     "promise",
     "immutable"
   ],
@@ -13,7 +14,9 @@
     "comma-dangle": 0,
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/no-did-mount-set-state": 0,
-    "react/jsx-indent": 0
+    "react/jsx-indent": 0,
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   },
   "overrides": [
     {
