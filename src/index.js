@@ -4,7 +4,6 @@ import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 
 if (process.env.NODE_ENV !== 'production') {
-  import('./lib/reactotron');
   import('./lib/wdyu');
 }
 

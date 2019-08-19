@@ -18,3 +18,12 @@ const rootReducer = combineReducers({
 });
 
 export default createStore(rootReducer, applyMiddleware(...middleware));
+
+// Redux DevTools config
+/* const composeEnhancers = __DEV__
+  ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
+  : compose;
+const store = createStore(
+  rootReducer,
+  composeEnhancers(applyMiddleware(...middleware))
+); */
