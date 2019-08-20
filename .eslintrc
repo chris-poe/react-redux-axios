@@ -3,7 +3,8 @@
   "extends": [
     "airbnb",
     "prettier",
-    "plugin:promise/recommended"
+    "plugin:promise/recommended",
+    "plugin:cypress/recommended"
   ],
   "plugins": [
     "react-hooks",
