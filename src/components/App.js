@@ -5,13 +5,15 @@ import Home from './screens/Home';
 import store from '../store';
 
 const App = () => (
-  <Provider store={store}>
-    <BrowserRouter>
-      <Switch>
-        <Route path="/" component={Home} />
-      </Switch>
-    </BrowserRouter>
-  </Provider>
+	<>
+	  <Provider store={store}>
+	    <BrowserRouter>
+	      <Switch>
+	        <Route path="/" component={Home} />
+	      </Switch>
+	    </BrowserRouter>
+	  </Provider>
+  </>
 );
 
 export default App;
